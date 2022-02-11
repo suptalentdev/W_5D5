@@ -1,0 +1,11 @@
+<h1>Movie App 🍿 🎬</h1>
+
+<h3>All the movies</h3>
+{{#each movies}}
+	<h5>{{title}}</h5>
+	<h5>Directed by: {{director}}</h5>
+	<img src="{{imgPath}}" height="200px" alt="poster for {{title}}">
+	<a href="/movies/{{_id}}/delete">Delete this movie from the list</a>
+{{/each}}
+
+<a href="/movie/add">Add a movie to the list</a>
